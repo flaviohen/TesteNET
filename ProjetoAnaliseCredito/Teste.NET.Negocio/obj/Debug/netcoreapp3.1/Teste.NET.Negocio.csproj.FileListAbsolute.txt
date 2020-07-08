@@ -1,0 +1,12 @@
+C:\Users\FlavioHenrique\source\repos\Teste.NET\Teste.NET.Negocio\bin\Debug\netcoreapp3.1\Teste.NET.Negocio.deps.json
+C:\Users\FlavioHenrique\source\repos\Teste.NET\Teste.NET.Negocio\bin\Debug\netcoreapp3.1\Teste.NET.Negocio.dll
+C:\Users\FlavioHenrique\source\repos\Teste.NET\Teste.NET.Negocio\bin\Debug\netcoreapp3.1\Teste.NET.Negocio.pdb
+C:\Users\FlavioHenrique\source\repos\Teste.NET\Teste.NET.Negocio\bin\Debug\netcoreapp3.1\Teste.NET.Model.dll
+C:\Users\FlavioHenrique\source\repos\Teste.NET\Teste.NET.Negocio\bin\Debug\netcoreapp3.1\Teste.NET.Model.pdb
+C:\Users\FlavioHenrique\source\repos\Teste.NET\Teste.NET.Negocio\obj\Debug\netcoreapp3.1\Teste.NET.Negocio.csprojAssemblyReference.cache
+C:\Users\FlavioHenrique\source\repos\Teste.NET\Teste.NET.Negocio\obj\Debug\netcoreapp3.1\Teste.NET.Negocio.AssemblyInfoInputs.cache
+C:\Users\FlavioHenrique\source\repos\Teste.NET\Teste.NET.Negocio\obj\Debug\netcoreapp3.1\Teste.NET.Negocio.AssemblyInfo.cs
+C:\Users\FlavioHenrique\source\repos\Teste.NET\Teste.NET.Negocio\obj\Debug\netcoreapp3.1\Teste.NET.Negocio.csproj.CoreCompileInputs.cache
+C:\Users\FlavioHenrique\source\repos\Teste.NET\Teste.NET.Negocio\obj\Debug\netcoreapp3.1\Teste.NET.Negocio.csproj.CopyComplete
+C:\Users\FlavioHenrique\source\repos\Teste.NET\Teste.NET.Negocio\obj\Debug\netcoreapp3.1\Teste.NET.Negocio.dll
+C:\Users\FlavioHenrique\source\repos\Teste.NET\Teste.NET.Negocio\obj\Debug\netcoreapp3.1\Teste.NET.Negocio.pdb

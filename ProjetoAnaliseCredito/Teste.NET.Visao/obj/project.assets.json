@@ -1,0 +1,117 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Teste.NET.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Teste.NET.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Teste.NET.Model.dll": {}
+        }
+      },
+      "Teste.NET.Negocio/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Teste.NET.Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Teste.NET.Negocio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Teste.NET.Negocio.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Teste.NET.Model/1.0.0": {
+      "type": "project",
+      "path": "../Teste.NET.Model/Teste.NET.Model.csproj",
+      "msbuildProject": "../Teste.NET.Model/Teste.NET.Model.csproj"
+    },
+    "Teste.NET.Negocio/1.0.0": {
+      "type": "project",
+      "path": "../Teste.NET.Negocio/Teste.NET.Negocio.csproj",
+      "msbuildProject": "../Teste.NET.Negocio/Teste.NET.Negocio.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "Teste.NET.Model >= 1.0.0",
+      "Teste.NET.Negocio >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\FlavioHenrique\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\FlavioHenrique\\source\\repos\\Teste.NET\\Teste.NET.Visao\\Teste.NET.Visao.csproj",
+      "projectName": "Teste.NET.Visao",
+      "projectPath": "C:\\Users\\FlavioHenrique\\source\\repos\\Teste.NET\\Teste.NET.Visao\\Teste.NET.Visao.csproj",
+      "packagesPath": "C:\\Users\\FlavioHenrique\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\FlavioHenrique\\source\\repos\\Teste.NET\\Teste.NET.Visao\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\FlavioHenrique\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {
+            "C:\\Users\\FlavioHenrique\\source\\repos\\Teste.NET\\Teste.NET.Model\\Teste.NET.Model.csproj": {
+              "projectPath": "C:\\Users\\FlavioHenrique\\source\\repos\\Teste.NET\\Teste.NET.Model\\Teste.NET.Model.csproj"
+            },
+            "C:\\Users\\FlavioHenrique\\source\\repos\\Teste.NET\\Teste.NET.Negocio\\Teste.NET.Negocio.csproj": {
+              "projectPath": "C:\\Users\\FlavioHenrique\\source\\repos\\Teste.NET\\Teste.NET.Negocio\\Teste.NET.Negocio.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

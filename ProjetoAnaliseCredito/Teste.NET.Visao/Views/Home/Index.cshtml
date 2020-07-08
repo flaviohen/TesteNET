@@ -1,0 +1,117 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">ANALISADOR DE CREDITO</h1>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <label for="cbxTipoCredito">Tipo de Crédito</label>
+            <select id="cbxTipoCredito" class="form-control">
+                <option value="0">Direto</option>
+                <option value="1">Consignado</option>
+                <option value="2">Pessoa Juridica</option>
+                <option value="3">Pessoa Fisica</option>
+                <option value="4">Imobiliario</option>
+            </select>
+        </div>
+        <div class="col-md-6">
+            <div id="resultado" style="position:relative;">
+               
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <label for="txtValorCredito">Valor Crédito</label>
+            <input type="text" id="txtValorCredito" class="form-control" name="name" value="" />
+        </div>
+        <div class="col-md-6">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <label for="txtQtdParcelas">Parcelas </label>
+            <input type="text" id="txtQtdParcelas" class="form-control" name="name" value="" />
+        </div>
+        <div class="col-md-6">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <label for="txtDataVencimento">Data vencimento</label>
+            <input type="date" id="txtDataVencimento" class="form-control" name="name" value="" />
+        </div>
+        <div class="col-md-6">
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-md-6">
+            <button type="button" onclick="Analisar();" class="btn btn-primary col-md-6">Analisar</button>
+        </div>
+        <div class="col-md-6">
+        </div>
+    </div>
+</div>
+
+<script>
+    function Analisar()
+    {
+        let tipoCredito = $("#cbxTipoCredito option:selected").val();
+        let ValorCredito = $("#txtValorCredito").val();
+        let QtParcelas = $("#txtQtdParcelas").val();
+        let DataVencimento = $("#txtDataVencimento").val();
+
+        var urlChamada = '@Url.Action("Analisar", "Home")';
+
+        $.ajax({
+            type: "POST",
+            url: urlChamada,
+            data: {
+                tipoCredito: tipoCredito,
+                valorCredito: ValorCredito,
+                qtParcelas: QtParcelas,
+                dataVencimento: DataVencimento
+            },
+            dataType: "JSON",
+            success: function (retorno) {
+                $("#resultado").html(Resultado(retorno.resultado));
+                console.log(retorno.resultado);
+            }
+        });
+    }
+
+    function Resultado(resultado)
+    {
+        let status = "";
+        let texto = "";
+        if (resultado.statusAnaliseCredito == 0) {
+            status = "Aprovado";
+            texto = `<div class="alert-success">
+                        <p><b>Status do Crédito: </b>${status}</p>
+                        <p><b>Valor Total com Juros: </b>R$ ${resultado.valorTotalComJuros}</p>
+                        <p><b>Valor do Juros: </b>R$ ${resultado.valorJuros}</p>
+                    </div>`;
+        }
+        else {
+
+            status = "Recusado";
+            texto = `<div class="alert-danger">
+                        <p><b>Status do Crédito: </b>${status}</p>
+                        <p><b>Valor Total com Juros: </b>R$ ${resultado.valorTotalComJuros}</p>
+                        <p><b>Valor do Juros: </b>R$ ${resultado.valorJuros}</p>
+                    </div>`;
+
+
+            texto += "<div class='alert-danger'>";
+            for (var i = 0; i < resultado.msgValidacao.length; i++) {
+                texto += `<p><b>${resultado.msgValidacao[i]}</b></p>`;
+            }
+            texto += "</div>";
+        }
+
+        return texto;
+    }
+</script>

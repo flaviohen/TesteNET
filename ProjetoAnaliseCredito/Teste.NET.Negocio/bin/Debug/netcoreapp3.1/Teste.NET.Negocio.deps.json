@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Teste.NET.Negocio/1.0.0": {
+        "dependencies": {
+          "Teste.NET.Model": "1.0.0"
+        },
+        "runtime": {
+          "Teste.NET.Negocio.dll": {}
+        }
+      },
+      "Teste.NET.Model/1.0.0": {
+        "runtime": {
+          "Teste.NET.Model.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Teste.NET.Negocio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Teste.NET.Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

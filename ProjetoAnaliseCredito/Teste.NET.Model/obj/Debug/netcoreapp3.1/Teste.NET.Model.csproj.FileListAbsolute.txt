@@ -1,0 +1,9 @@
+C:\Users\FlavioHenrique\source\repos\Teste.NET\Teste.NET.Model\bin\Debug\netcoreapp3.1\Teste.NET.Model.deps.json
+C:\Users\FlavioHenrique\source\repos\Teste.NET\Teste.NET.Model\bin\Debug\netcoreapp3.1\Teste.NET.Model.dll
+C:\Users\FlavioHenrique\source\repos\Teste.NET\Teste.NET.Model\bin\Debug\netcoreapp3.1\Teste.NET.Model.pdb
+C:\Users\FlavioHenrique\source\repos\Teste.NET\Teste.NET.Model\obj\Debug\netcoreapp3.1\Teste.NET.Model.csprojAssemblyReference.cache
+C:\Users\FlavioHenrique\source\repos\Teste.NET\Teste.NET.Model\obj\Debug\netcoreapp3.1\Teste.NET.Model.AssemblyInfoInputs.cache
+C:\Users\FlavioHenrique\source\repos\Teste.NET\Teste.NET.Model\obj\Debug\netcoreapp3.1\Teste.NET.Model.AssemblyInfo.cs
+C:\Users\FlavioHenrique\source\repos\Teste.NET\Teste.NET.Model\obj\Debug\netcoreapp3.1\Teste.NET.Model.csproj.CoreCompileInputs.cache
+C:\Users\FlavioHenrique\source\repos\Teste.NET\Teste.NET.Model\obj\Debug\netcoreapp3.1\Teste.NET.Model.dll
+C:\Users\FlavioHenrique\source\repos\Teste.NET\Teste.NET.Model\obj\Debug\netcoreapp3.1\Teste.NET.Model.pdb
