@@ -5,3 +5,5 @@
 - **ProjetoBancoDeDados **contém o script de criação das tabelas, script de carga de dados teste, script das querys solicitadas e uma imagem da modelagem do banco.
 [Modelagem](https://ibb.co/bRtfQmT "Modelagem")
 
+- **Arquitetura **contém a imagem com o modelo da arquitetura conforme exercicio.
+
